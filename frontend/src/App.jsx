@@ -16,7 +16,6 @@ function App() {
   const { theme } = useThemeStore();
 
   useEffect(() => {
-    fetch(`${import.meta.env.VITE_API_URL}/api/data`);
     checkAuth();
   }, [checkAuth]);
 

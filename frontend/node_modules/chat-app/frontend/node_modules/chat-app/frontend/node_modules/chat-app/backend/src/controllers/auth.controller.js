@@ -39,7 +39,7 @@ export const signup = async (req, res) => {
       res.status(400).json({ message: "Invalid user details" });
     }
   } catch (error) {
-    //console.log("Error in signup controller", error);
+    console.log("Error in signup controller", error);
     res.status(500).json({ message: "Internal server error" });
   }
 };
@@ -64,7 +64,7 @@ export const login = async (req, res) => {
       profilePic: user.profilePic,
     });
   } catch (error) {
-    //console.log("Error in login controller", error);
+    console.log("Error in login controller", error);
     res.status(500).json({ message: "Internal server error" });
   }
 };
@@ -77,7 +77,7 @@ export const logout = async (req, res) => {
     });
     res.status(200).json({ message: "Logout successfully" });
   } catch (error) {
-    //console.log("Error in logout controller", error);
+    console.log("Error in logout controller", error);
     res.status(500).json({ message: "Internal server error" });
   }
 };
@@ -99,7 +99,7 @@ export const updateProfile = async (req, res) => {
     );
     res.status(200).json({ message: "Profile updated successfully" });
   } catch (error) {
-    //console.log("Error in updateProfile controller", error);
+    console.log("Error in updateProfile controller", error);
     res.status(500).json({ message: "Internal server error" });
   }
 };
@@ -109,7 +109,7 @@ export const checkAuth = (req, res) => {
   try {
     res.status(200).json(req.user);
   } catch (error) {
-    //console.log("Error in checkAuth controller", error);
+    console.log("Error in checkAuth controller", error);
     res.status(500).json({ message: "Internal server error" });
   }
 };
