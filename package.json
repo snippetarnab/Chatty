@@ -1,0 +1,19 @@
+{
+  "name": "chat-app",
+  "version": "1.0.0",
+  "description": "A chat app inspire by whatsapp",
+  "main": "index.js",
+  "scripts": {
+    "build": "npm i --prefix backend && npm i --prefix frontend && npm run build --prefix frontend",
+    "start": "npm run start --prefix backend"
+  },
+  "keywords": [
+    "Nodejs",
+    "Express",
+    "Nodemon",
+    "MongoDB",
+    "Socketio"
+  ],
+  "author": "snippetarnab",
+  "license": "ISC"
+}

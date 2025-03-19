@@ -1,7 +1,7 @@
-import React from 'react'
-import { useAuthStore } from '../store/useAuthStore';
-import { LogOut, MessageSquare, Settings, User } from 'lucide-react';
-import { Link } from 'react-router-dom';
+import React from "react";
+import { useAuthStore } from "../store/useAuthStore";
+import { LogOut, MessageSquare, Settings, User } from "lucide-react";
+import { Link } from "react-router-dom";
 
 function Navbar() {
   const { authUser, logout } = useAuthStore();
@@ -20,7 +20,7 @@ function Navbar() {
               <div className="size-9 rounded-lg bg-primary/10 flex items-center justify-center">
                 <MessageSquare className="w-5 h-5 text-primary" />
               </div>
-              <h1 className="text-lg font-bold">Chatty</h1>
+              <h1 className="font-bold font-[Playwrite_HU] text-lg">Talks</h1>
             </Link>
           </div>
 
@@ -56,4 +56,4 @@ function Navbar() {
   );
 }
 
-export default Navbar
+export default Navbar;
